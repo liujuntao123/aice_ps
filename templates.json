@@ -21,7 +21,7 @@
     "iconUrl": "public/images/3.1.jpg",
     "baseUrl": "public/images/3.jpg",
     "description": "逼真的工艺技术制作出来的塑料模型",
-    "prompt": "Transform this illustration into a photorealistic PVC anime figure. Keep the original character’s design, pose, and colors exactly the same. Render it as a collectible figurine made of PVC plastic, with realistic painted surface and detailed shading. Apply glossy highlights on areas such as the hair and clothing, matte finish on the skin, and subtle seam lines as seen in real manufactured figures. Place the figure on a simple round display base, with a soft shadow cast beneath it. Use a neutral studio background, professional studio lighting, sharp focus, shallow depth of field, as if photographed for a catalog."
+    "prompt": "Transform this illustration into a photorealistic PVC anime figure. Keep the original character's design, pose, and colors exactly the same. Render it as a collectible figurine made of PVC plastic, with realistic painted surface and detailed shading. Apply glossy highlights on areas such as the hair and clothing, matte finish on the skin, and subtle seam lines as seen in real manufactured figures. Place the figure on a simple round display base, with a soft shadow cast beneath it. Use a neutral studio background, professional studio lighting, sharp focus, shallow depth of field, as if photographed for a catalog."
   },
   {
     "id": "template-home-design",
@@ -45,7 +45,7 @@
     "iconUrl": "public/images/6.1.jpg",
     "baseUrl": "public/images/6.jpg",
     "description": "高端商业静物：纯白背景、棚拍柔光、浅景深，突出极小但细节丰富的产品。",
-    "prompt": "A high-resolution advertising photograph of a realistic, miniature this thing held delicately between a person's thumb and index finger. clean and white background, studio lighting, soft shadows. The hand is well-groomed, natural skin tone, and positioned to highlight the product’s shape and details. The product appears extremely small but hyper-detailed and brand-accurate, centered in the frame with a shallow depth of field. Emulates luxury product photography and minimalist commercial style."
+    "prompt": "A high-resolution advertising photograph of a realistic, miniature this thing held delicately between a person's thumb and index finger. clean and white background, studio lighting, soft shadows. The hand is well-groomed, natural skin tone, and positioned to highlight the product's shape and details. The product appears extremely small but hyper-detailed and brand-accurate, centered in the frame with a shallow depth of field. Emulates luxury product photography and minimalist commercial style."
   },
   {
     "id": "template-kawaii-red-panda-sticker",
@@ -78,5 +78,29 @@
     "baseUrl": "public/images/10.jpg",
     "description": "一键生成16种表情的卡通网格！趣味十足！",
     "prompt": "Create a 4x4 grid (16 panels total) featuring the upper body character from the input image displaying 16 different exaggerated emotions. Each panel should show only the upper torso and head of the character with dramatically expressive facial expressions and body language. Layout requirements: - Evenly divide the image into 16 equal squares arranged in a 4x4 grid - Separate each panel with thin white lines - Each panel can have different background colors and artistic styles while maintaining consistent character structure - Below each expression, include the corresponding English emotion word in rounded cartoon font style (white text with black outline) Expression variety: Include diverse emotions such as: happy, sad, angry, surprised, confused, excited, sleepy, worried, laughing, crying, shocked, bored, love-struck, frustrated, determined, and silly. Visual style: - Exaggerated and dynamic expressions full of personality and humor - Consistent character design across all 16 panels - Vibrant and varied color schemes for each panel background - Cartoon/anime art style with bold, expressive features - High contrast and clear visibility for all text labels"
+  },
+  {
+    "id": "template-marble-statue",
+    "name": "大理石雕像",
+    "iconUrl": "public/images/11.1.jpg",
+    "baseUrl": "public/images/11.jpg",
+    "description": "将插画转换为博物馆级别的大理石雕像艺术品",
+    "prompt": "Convert this illustration into a photorealistic marble statue without any paintwork. Faithfully reproduce the character's design and pose, focusing on the figure itself. Render it as a marble statue with a realistic marble surface and detailed shading. Place the statue on a marble pedestal, positioned to cast a soft shadow beneath it. Achieve a fine art photograph-like finish using museum-quality backgrounds, professional lighting, sharp focus, and shallow depth of field."
+  },
+  {
+    "id": "template-vintage-tin-toy",
+    "name": "复古铁皮玩具",
+    "iconUrl": "public/images/12.1.jpg",
+    "baseUrl": "public/images/12.jpg",
+    "description": "怀旧发条铁皮玩具风格，带有岁月痕迹的复古质感",
+    "prompt": "[uploaded image] rendered as vintage tin toy, clockwork key in back; weathered paint chips, micro-scratches, shot on wood workbench with retro tungsten bulb, 100 mm macro, tilt-shift"
+  },
+  {
+    "id": "template-water-droplet-reflection",
+    "name": "水滴倒影",
+    "iconUrl": "public/images/13.1.jpg",
+    "baseUrl": "public/images/13.jpg",
+    "description": "绿叶上的晶莹水滴中完美倒映上传图像，自然光影效果",
+    "prompt": "Create an ultra-high-definition, photorealistic image of a single crystal-clear water droplet resting on a vibrant green leaf. Inside the droplet, perfectly reflect the content of the uploaded image, ensuring all details of that image are sharply visible and undistorted. Emphasize the intricate texture and veins of the leaf beneath the droplet, and capture realistic light refractions and micro-surface reflections on the water. Use natural, soft ambient lighting to highlight the dew drop's clarity and depth, and maintain a harmonious balance between the organic leaf texture and the urban or subject-specific elements from the uploaded image inside the droplet"
   }
 ]
