@@ -4,7 +4,7 @@
 */
 
 // FIX: Corrected React import statement. The 'a' was a typo.
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { UploadIcon, PaintBrushIcon, TemplateLibraryIcon } from './icons';
 import { generateImageFromText } from '../services/geminiService';
 import Spinner from './Spinner';
@@ -92,6 +92,14 @@ const StartScreen: React.FC<StartScreenProps> = ({ onFileSelect, onImageGenerate
 
     fetchTemplates();
   }, []);
+
+  const displayedTemplates = useMemo(() => {
+    if (templates.length <= 6) {
+        return templates;
+    }
+    const shuffled = [...templates].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, 6);
+  }, [templates]);
 
   useEffect(() => {
     const handlePaste = (event: ClipboardEvent) => {
@@ -220,7 +228,7 @@ const StartScreen: React.FC<StartScreenProps> = ({ onFileSelect, onImageGenerate
         
         {/* Upload Column */}
         <div
-          className={`group p-6 bg-gray-800/30 border-2 rounded-2xl backdrop-blur-sm flex flex-col justify-center items-center transition-all duration-300 md:col-span-6 ${isDraggingOver ? 'bg-blue-500/20 border-dashed border-blue-400' : 'border-gray-700/50 hover:border-blue-500/50'}`}
+          className={`group p-6 rounded-2xl flex flex-col justify-center items-center transition-all duration-300 md:col-span-6 animated-border-glow ${isDraggingOver ? 'is-dragging-over bg-blue-500/20 border-2 border-dashed border-blue-400' : ''}`}
           onDragOver={(e) => { e.preventDefault(); setIsDraggingOver(true); }}
           onDragLeave={() => setIsDraggingOver(false)}
           onDrop={handleDrop}
@@ -230,7 +238,7 @@ const StartScreen: React.FC<StartScreenProps> = ({ onFileSelect, onImageGenerate
                 <div className="w-full">
                     <h3 className="text-lg font-semibold text-gray-300 mb-2">或从模板开始</h3>
                     <div className="grid grid-cols-3 gap-3 max-w-md mx-auto">
-                        {templates.slice(0, 6).map(template => (
+                        {displayedTemplates.map(template => (
                             <TemplateButton 
                                 key={template.id} 
                                 template={template} 
