@@ -94,7 +94,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, onSave }
                         setBaseUrl(e.target.value);
                         setIsSaved(false);
                     }}
-                    placeholder="例如: https://api.kuai.host/"
+                    placeholder="例如: https://apis.kuai.host/"
                     className="bg-gray-900 border border-gray-600 text-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
                 />
             </div>

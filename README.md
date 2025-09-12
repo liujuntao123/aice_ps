@@ -4,15 +4,15 @@ Aice PS 是一款功能强大的网页版 AI 照片编辑器，利用 Google ais
 
 ![Aice PS 界面截图](public/images/show.jpg)
 
-## 注意，调用 gemini api key 是需要收费的。但直接调用环境变量中的api是免费的。[推荐可大方使用的极具性价比API平台](https://cnb.build/no.1/api/-/issues/2)
+## 注意，调用 gemini api key 是需要收费的。但直接调用环境变量中的api是免费的。[推荐可大方使用的极具性价比API平台 2分钱一张，高清1毛2](https://nb2.kuai.host/)
 
 ### [AiStudio 【NanoBanana APP】](https://ai.studio/apps/drive/1JSVTWc7Pe1GfLLrQcBWPZF_yH_80xUGg) 
 
 > 登录了google aistudio 的可以直接打开上面 app 使用。完全免费
 
-### [【可自部署版本 DEMO】https://nb.kuai.host/](https://nb.kuai.host/)
+### [【可自部署版本 DEMO】https://nb2.kuai.host/](https://nb2.kuai.host/)
 
-> #### 自部署版本，国内可直接用，已经配套了实惠且稳定的香蕉API，推荐使用。
+> #### 自部署版本，国内可直接用，已经配套了超值的香蕉API，推荐使用。
 
 > #### 请大家谨慎使用自己的gemini api key。[推荐可大方使用的极具性价比API平台](https://cnb.build/no.1/api/-/issues/2)
 
@@ -72,8 +72,9 @@ Aice PS 的强大功能由 Google 最先进的一系列生成式 AI 模型驱动
 - [x] 增加模板功能 (NB 提示词库)
 - [x] 提示词集中营 (NB 提示词库)
 - [x] 重新支持Gemini API，大家也可以自行部署并使用兼容gemini api的API来使用。[推荐可大方使用的极具性价比API平台，源头价格更低](https://cnb.build/no.1/api/-/issues/2)
+- [] 持续增加提示词模板中
 - [] 芝士香蕉功能-计划中
-- [] 接入 OpenRouter api，可每天免费调用50次 Nano Banana
+- [] 接入 第三方平台API
 - [] ……
 
 

@@ -54,5 +54,29 @@
     "baseUrl": "public/images/7.jpg",
     "description": "卡哇伊风，粗线条、简洁赛璐璐上色、鲜艳配色，纯白背景。",
     "prompt": "Analyze the input image and extract the main subject. Design a kawaii-style square sticker of that subject: bold, clean outlines, simple cel-shading, vibrant color palette, centered composition, and a pure white background. Keep the subject recognizable while simplifying shapes; add a neat white die-cut border. Avoid text, logos, and busy backgrounds; the result should look like a minimalist commercial sticker."
+  },
+  {
+    "id": "template-amigurumi-crochet",
+    "name": "钩针玩偶",
+    "iconUrl": "public/images/8.1.jpg",
+    "baseUrl": "public/images/8.jpg",
+    "description": "超写实钩针amigurumi玩偶，影棚级专业拍摄效果。",
+    "prompt": "A high-resolution, studio-lit, hyper-realistic amigurumi product photograph. Transform the main subject (animal or character) from the input image into a handcrafted crochet item, presented on a polished concrete surface. Use three-point softbox lighting to create soft, diffused highlights that eliminate harsh shadows. Shot from a slightly elevated 45-degree angle to showcase clean lines. Features visible yarn texture, stitch details, and soft, felt-like proportions. Has tiny embroidered eyes and simplified facial features. Includes realistic fabric shadows and subtle fuzz for depth of field. Hyperrealistic style with sharp focus point. Neutral gray-toned background for professional presentation. Square 1080x1080 format image."
+  },
+  {
+    "id": "template-line-art-extraction",
+    "name": "精细线稿",
+    "iconUrl": "public/images/9.1.jpg",
+    "baseUrl": "public/images/9.jpg",
+    "description": "精确勾勒，生成纯粹线条艺术。",
+    "prompt": "使用提供的图片，将主要图案/主题的视觉元素精细地转化为纯粹的线条艺术。仅勾勒出图案的轮廓和内部结构线，忽略所有光影、纹理和色彩信息。最终图像应为清晰、简洁的黑白线条图，精确地描绘出原始图案的形状和细节。"
+  },
+  {
+    "id": "template-emotion-grid-16",
+    "name": "16宫格表情包",
+    "iconUrl": "public/images/10.1.jpg",
+    "baseUrl": "public/images/10.jpg",
+    "description": "一键生成16种表情的卡通网格！趣味十足！",
+    "prompt": "Create a 4x4 grid (16 panels total) featuring the upper body character from the input image displaying 16 different exaggerated emotions. Each panel should show only the upper torso and head of the character with dramatically expressive facial expressions and body language. Layout requirements: - Evenly divide the image into 16 equal squares arranged in a 4x4 grid - Separate each panel with thin white lines - Each panel can have different background colors and artistic styles while maintaining consistent character structure - Below each expression, include the corresponding English emotion word in rounded cartoon font style (white text with black outline) Expression variety: Include diverse emotions such as: happy, sad, angry, surprised, confused, excited, sleepy, worried, laughing, crying, shocked, bored, love-struck, frustrated, determined, and silly. Visual style: - Exaggerated and dynamic expressions full of personality and humor - Consistent character design across all 16 panels - Vibrant and varied color schemes for each panel background - Cartoon/anime art style with bold, expressive features - High contrast and clear visibility for all text labels"
   }
 ]
