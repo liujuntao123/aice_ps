@@ -234,26 +234,10 @@ const callImageEditingModel = async (parts: any[], action: string): Promise<stri
 }
 
 export const generateImageFromText = async (prompt: string, aspectRatio: string): Promise<string> => {
-    try {
-        const ai = getGoogleAI();
-        const response = await ai.models.generateImages({
-            model: 'imagen-4.0-generate-001',
-            prompt,
-            config: {
-                numberOfImages: 1,
-                outputMimeType: 'image/png',
-                aspectRatio: aspectRatio as "1:1" | "16:9" | "9:16" | "4:3" | "3:4",
-            },
-        });
+    const aspectRatioHint = aspectRatio ? `\nThe final image must use a ${aspectRatio} aspect ratio.` : '';
+    const textPart = { text: `${prompt}${aspectRatioHint}` };
 
-        if (response.generatedImages && response.generatedImages.length > 0) {
-            const base64ImageBytes: string = response.generatedImages[0].image.imageBytes;
-            return `data:image/png;base64,${base64ImageBytes}`;
-        }
-        throw new Error('AI 未能生成图片。');
-    } catch (e) {
-        throw handleApiError(e, '生成图片');
-    }
+    return callImageEditingModel([textPart], '生成图片');
 };
 
 export const generateEditedImage = async (imageFile: File, prompt: string, hotspot: { x: number; y: number }): Promise<string> => {
