@@ -24,6 +24,7 @@ import PastForwardPage from './components/PastForwardPage';
 import BeatSyncPage from './components/BeatSyncPage';
 import TemplateLibraryPage from './components/TemplateLibraryPage';
 import TemplateDisplayPage from './components/TemplateDisplayPage';
+import BatchGenerationPage from './components/BatchGenerationPage';
 
 // Helper to convert a data URL string to a File object
 const dataURLtoFile = (dataurl: string, filename: string): File => {
@@ -107,7 +108,7 @@ type LastAction =
   | { type: 'texture', prompt: string }
   | { type: 'erase' };
 
-export type View = 'editor' | 'past-forward' | 'beatsync' | 'template-library' | 'template-display';
+export type View = 'editor' | 'batch-generate' | 'past-forward' | 'beatsync' | 'template-library' | 'template-display';
 export type EditorInitialState = { baseImageUrl: string; prompt: string };
 export interface Template {
   id: string;
@@ -719,10 +720,12 @@ const App: React.FC = () => {
   
   const MainContent: React.FC = () => {
     switch (activeView) {
+        case 'batch-generate':
+            return <BatchGenerationPage />;
         case 'past-forward': return <PastForwardPage />;
         case 'beatsync': return <BeatSyncPage />;
         case 'template-library': return <TemplateLibraryPage onTemplateSelect={handleTemplateSelect} />;
-        case 'template-display': 
+        case 'template-display':
             return selectedTemplate ? (
                 <TemplateDisplayPage
                     template={selectedTemplate}

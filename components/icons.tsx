@@ -154,6 +154,12 @@ export const TemplateLibraryIcon: React.FC<{ className?: string }> = ({ classNam
     </svg>
 );
 
+export const GalleryIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 3.75h3.75A2.25 2.25 0 0 1 10.5 6v3.75A2.25 2.25 0 0 1 8.25 12H4.5A2.25 2.25 0 0 1 2.25 9.75V6A2.25 2.25 0 0 1 4.5 3.75zm0 8.25h3.75a2.25 2.25 0 0 1 2.25 2.25v3.75a2.25 2.25 0 0 1-2.25 2.25H4.5A2.25 2.25 0 0 1 2.25 18v-3.75A2.25 2.25 0 0 1 4.5 12zm8.25-8.25h3.75A2.25 2.25 0 0 1 18.75 6v3.75A2.25 2.25 0 0 1 16.5 12h-3.75a2.25 2.25 0 0 1-2.25-2.25V6a2.25 2.25 0 0 1 2.25-2.25zm0 8.25h3.75a2.25 2.25 0 0 1 2.25 2.25v3.75a2.25 2.25 0 0 1-2.25 2.25h-3.75a2.25 2.25 0 0 1-2.25-2.25v-3.75a2.25 2.25 0 0 1 2.25-2.25z" />
+    </svg>
+);
+
 export const SearchIcon: React.FC<{ className?: string }> = ({ className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />

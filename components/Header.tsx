@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React from 'react';
-import { SparkleIcon, GitHubIcon, ClockIcon, FilmIcon, CogIcon, QuestionMarkCircleIcon, TemplateLibraryIcon } from './icons';
+import { SparkleIcon, GitHubIcon, ClockIcon, FilmIcon, CogIcon, QuestionMarkCircleIcon, TemplateLibraryIcon, GalleryIcon } from './icons';
 import { type View } from '../App';
 
 interface HeaderProps {
@@ -22,6 +22,15 @@ const Header: React.FC<HeaderProps> = ({ activeView, onViewChange, onOpenSetting
                 <SparkleIcon className="w-6 h-6 text-blue-400" />
                 <h1 className="text-xl font-bold tracking-tight">
                   Aice PS
+                </h1>
+              </button>
+
+              <div className="h-6 w-px bg-gray-600"></div>
+
+              <button onClick={() => onViewChange('batch-generate')} className={`flex items-center gap-3 transition-colors p-2 -m-2 rounded-lg ${activeView === 'batch-generate' ? 'text-white' : 'text-gray-400 hover:text-white hover:bg-white/10'}`}>
+                <GalleryIcon className="w-6 h-6 text-cyan-400" />
+                <h1 className="text-xl font-bold tracking-tight">
+                  批量生成
                 </h1>
               </button>
 
