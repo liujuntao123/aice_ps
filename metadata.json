@@ -1,6 +1,6 @@
 {
   "name": "Aice PS",
-  "description": "一款集成式 AI 创意套件。从文本生成图像、通过自然语言编辑照片，到一键穿越时空（Past Forward）、随音乐节拍生成视频（音画志），更有丰富的“NB提示词库”激发您的无限灵感。由 Gemini & Imagen 强力驱动。",
+  "description": "一款集成式 AI 创意套件。从文本生成图像、通过自然语言编辑照片，到一键穿越时空（Past Forward）、随音乐节拍生成视频（音画志），更有丰富的“NB提示词库”激发您的无限灵感。由 Gemini 系列模型强力驱动。",
   "requestFramePermissions": [],
   "prompt": ""
 }
